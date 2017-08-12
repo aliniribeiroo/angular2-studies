@@ -1,0 +1,39 @@
+<form #f="ngForm" (ngSubmit)="sendContactToServer(f)">
+  <label>
+    <span>Seu nome completo</span>
+    <input id="nome" type="text" name="fullName" placeholder="Seu nome"
+           #fullName="ngModel" ngModel minlength="2" required>
+  </label>
+
+  <div *ngIf="fullName.errors?.required && fullName.touched" class="error">
+    O nome é obrigatório
+  </div>
+
+  <label ngModelGroup="contactModel" #contactModel="ngModelGroup">
+    <span>Email </span>
+    <input type="email" placeholder="Seu e-mail aqui..." name="userEmail" ngModel required>
+
+    <span>Mensagem: </span>
+    <input type="text" placeholder="Sua mensagem" name="message" ngModel required>
+
+  </label>
+
+
+  <button type="submit" [disabled]="f.invalid">Enviar</button>
+</form>
+
+<!--
+ngForm -> '#f'
+    ngModel -> 'nomeCompleto'
+    ngModelGroup -> 'contato'
+        -> ngModel -> 'email'
+-->
+
+
+<P>
+  {{fullName.errors | json }}
+</P>
+
+<P>
+  {{ f.controls.fullName?.errors | json }}
+</P>
