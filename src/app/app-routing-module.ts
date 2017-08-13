@@ -14,6 +14,10 @@ import {Routes, RouterModule} from '@angular/router';
     {
       path: 'pipes',
       loadChildren: './pipe/pipe.module#PipeModule'
+    },
+    {
+      path: 'change-detection',
+      loadChildren: './change-detection/change-detection.module#ChangeDetectionModule'
     }
 
   ])],

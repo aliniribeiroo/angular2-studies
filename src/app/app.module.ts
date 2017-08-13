@@ -6,17 +6,18 @@ import {ValidationContactsModule} from "./validation-contacts/validation-contact
 import {PageNotFoundModule} from "./page-not-found/page-not-found.module";
 import {ShareModule} from "./share/share.module";
 import {BrowserModule} from "@angular/platform-browser";
-import {PipeComponent} from './pipe/pipe.component';
+import {WelcomeModule} from "./welcome/welcome.module";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     ShareModule,
     BrowserModule,
     AppRoutingModule,
     ValidationContactsModule,
+    WelcomeModule,
 
     PageNotFoundModule
   ],

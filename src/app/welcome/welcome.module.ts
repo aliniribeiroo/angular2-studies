@@ -1,7 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
 import {WelcomeComponent} from "./welcome.component";
-import {ShareModule} from "../share/share.module";
 import {RouterModule} from "@angular/router";
 
 @NgModule({
