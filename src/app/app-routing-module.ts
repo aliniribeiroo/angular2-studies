@@ -10,6 +10,10 @@ import {Routes, RouterModule} from '@angular/router';
     {
       path: 'directive-common',
       loadChildren: './directive-common-module/directive-common.module#DirectiveCommonModule'
+    },
+    {
+      path: 'pipes',
+      loadChildren: './pipe/pipe.module#PipeModule'
     }
 
   ])],

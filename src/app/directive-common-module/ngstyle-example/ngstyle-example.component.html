@@ -8,7 +8,7 @@
         'font-weight': 'bold',
         'borderBottom': borderStyle
       }">
-  Veja o ngStyle aqui
+ Veja o ngStyle aqui
 </p>
 
 <p style="padding: 1rem"
@@ -19,7 +19,9 @@
       }">
   Veja o ngStyle aqui
 </p>
-
+<p>
+  {{'Alini' | uppercase | slice:1 }}
+</p>
 <p style="padding: 1rem"
    [ngStyle]="alertStyles">
   Veja o ngStyle aqui
