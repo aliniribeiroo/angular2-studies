@@ -3,13 +3,14 @@ import {ShareModule} from "../share/share.module";
 import {ValidationContactsComponent} from "./validation-contacts.component";
 import {ValidationContactsRoutingModule} from "./validation-contacts-routing.module";
 import {ValidationContactsService} from "./validation-contacts.service";
+import {HttpModule} from "@angular/http";
 
 @NgModule({
   imports: [
     ShareModule,
-    ValidationContactsRoutingModule
+    ValidationContactsRoutingModule,
+    HttpModule
   ],
-  exports:[ ValidationContactsComponent ],
   declarations: [ ValidationContactsComponent ],
   providers: [ ValidationContactsService ]
 })

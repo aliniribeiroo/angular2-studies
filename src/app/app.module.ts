@@ -1,20 +1,25 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
-import {GiphySearchManualComponentModule} from "./giphy/giphy-search-manual/giphy-search-manual.module";
+import {AppComponent} from './app.component';
 import {AppRoutingModule} from "./app-routing-module";
 import {ValidationContactsModule} from "./validation-contacts/validation-contacts.module";
+import {PageNotFoundModule} from "./page-not-found/page-not-found.module";
+import {WelcomeModule} from "./welcome/welcome.module";
+import {ShareModule} from "./share/share.module";
+import {GiphySearchManualComponentModule} from "./giphy/giphy-search-manual/giphy-search-manual.module";
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule,
-    GiphySearchManualComponentModule,
+    ShareModule,
     AppRoutingModule,
-    ValidationContactsModule
+    ValidationContactsModule,
+    WelcomeModule,
+    GiphySearchManualComponentModule,
+
+    PageNotFoundModule
   ],
   providers: [],
   bootstrap: [AppComponent]
