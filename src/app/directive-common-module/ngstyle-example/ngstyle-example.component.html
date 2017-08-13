@@ -1,3 +1,29 @@
-<p>
-  ngstyle-example works!
+<p style="padding: 1rem; color: Blue; font-weight: bold; borderBottom: borderStyle">
+  Veja o ngStyle MANUAL TRADICIONAL aqui
 </p>
+
+<p style="padding: 1rem"
+   [ngStyle]="{
+        'color': 'pink',
+        'font-weight': 'bold',
+        'borderBottom': borderStyle
+      }">
+  Veja o ngStyle aqui
+</p>
+
+<p style="padding: 1rem"
+   [ngStyle]="{
+        'color': cor,
+        'font-weight': 'bold',
+        'borderBottom': borderStyle
+      }">
+  Veja o ngStyle aqui
+</p>
+
+<p style="padding: 1rem"
+   [ngStyle]="alertStyles">
+  Veja o ngStyle aqui
+</p>
+
+
+

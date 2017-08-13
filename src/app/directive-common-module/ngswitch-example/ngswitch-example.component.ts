@@ -4,11 +4,12 @@ import { Component, OnInit } from '@angular/core';
   selector: 'ngswitch-example',
   templateUrl: './ngswitch-example.component.html'
 })
-export class NgswitchExampleComponent implements OnInit {
+export class NgswitchExampleComponent{
 
-  constructor() { }
+  format: Number = 0;
 
-  ngOnInit() {
+  setFormatter(num: Number){
+    this.format = num;
   }
 
 }

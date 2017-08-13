@@ -4,11 +4,16 @@ import { Component, OnInit } from '@angular/core';
   selector: 'ngstyle-example',
   templateUrl: './ngstyle-example.component.html'
 })
-export class NgstyleExampleComponent implements OnInit {
+export class NgstyleExampleComponent {
 
-  constructor() { }
+  borderStyle = '1px solid black';
 
-  ngOnInit() {
-  }
+  cor: string = 'brown';
+
+  alertStyles = {
+    'color': 'orange',
+    'font-weight': 'bold',
+    'borderBottom': this.borderStyle
+  };
 
 }
