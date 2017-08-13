@@ -6,7 +6,7 @@ import {ValidationContactsModule} from "./validation-contacts/validation-contact
 import {PageNotFoundModule} from "./page-not-found/page-not-found.module";
 import {WelcomeModule} from "./welcome/welcome.module";
 import {ShareModule} from "./share/share.module";
-import {GiphySearchManualComponentModule} from "./giphy/giphy-search-manual/giphy-search-manual.module";
+import {BrowserModule} from "@angular/platform-browser";
 
 @NgModule({
   declarations: [
@@ -14,10 +14,10 @@ import {GiphySearchManualComponentModule} from "./giphy/giphy-search-manual/giph
   ],
   imports: [
     ShareModule,
+    BrowserModule,
     AppRoutingModule,
     ValidationContactsModule,
     WelcomeModule,
-    GiphySearchManualComponentModule,
 
     PageNotFoundModule
   ],
