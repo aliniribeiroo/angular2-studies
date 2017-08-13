@@ -7,10 +7,12 @@ import {PageNotFoundModule} from "./page-not-found/page-not-found.module";
 import {ShareModule} from "./share/share.module";
 import {BrowserModule} from "@angular/platform-browser";
 import {WelcomeModule} from "./welcome/welcome.module";
+import {RouteroutletExampleModule} from "./routeroutlet-example/routeroutlet-example.module";
+import {RoutesChildrenModule} from "./routes-children/routes-children.module";
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     ShareModule,
@@ -18,6 +20,8 @@ import {WelcomeModule} from "./welcome/welcome.module";
     AppRoutingModule,
     ValidationContactsModule,
     WelcomeModule,
+    RouteroutletExampleModule,
+    RoutesChildrenModule,
 
     PageNotFoundModule
   ],

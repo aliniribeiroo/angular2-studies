@@ -7,9 +7,19 @@
         <li><a [routerLink]="'validation-contact'">Contacts</a></li>
         <li><a [routerLink]="'pipes'">Pipes</a></li>
         <li><a [routerLink]="'change-detection'">Change Detection</a></li>
+        <li><a [routerLink]="['routeroutlet', {outlets: {mestre: ['pessoa'], detalhe: ['endereco'] }} ]"> Router Outlet</a></li>
+        <li><a [routerLink]="'routes-children'">Children routes</a></li>
+
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+<!-- <a [routerLink]="[{ outlets: { negrito: ['routeroutlet']}}]">Outlet click gere</a>
+<b>
+  <router-outlet name="negrito"></router-outlet>
+</b>
+-->
+
 
 <router-outlet></router-outlet>
