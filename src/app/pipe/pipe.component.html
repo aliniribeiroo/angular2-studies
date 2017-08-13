@@ -1,3 +1,49 @@
-<p>
-  pipe works!
-</p>
+
+{{ 'J' | typePerson}}
+{{ 'F'| typePerson}}
+{{ 'test Alini' | capitalizePipe}}
+
+<H2>DecimalPipe</H2>
+<p>Preço: {{10.417 | number}}</p>
+
+<p>Preço: {{10.417 | number: '3.2-2' }} -->   A formatação informa que queremos 3 números á esquerda e 2 a direita</p>
+
+
+<H2>CurrencyPipe</H2>
+<p>Preço: {{10.49 | currency: 'USD': false }}</p>
+<p>Preço: {{10.43 | currency: 'USD': true }}</p>
+<p>Preço: {{10.41 | currency: 'BRL': true }}</p>
+
+<p>Preço: {{104 | currency: 'BRL': true: '4.2-2' }}</p>
+
+
+<H2>PercentPipe</H2>
+<p>Percent: {{1 | percent}}</p>
+<p>Percent: {{0.5 | percent}}</p>
+<p>Percent: {{1.45 | percent}}</p>
+
+
+<!-- DatePipe, UpperCasePipe, LowerCasePipe -->
+<!-- Angular não tem um FilterPipe ou um OrderByPipe porquê isso degrada a performance do framework
+  podemos pedir esta formatação para o backend-->
+<h2>---------------------------------------------------------</h2>
+<h2>UpperCasePipe</h2>
+{{' aqui tem pipes ' | uppercase }}
+
+
+<h2>DatePipe</h2>
+{{ dataCriacao | date }}
+<P>
+  {{ dataCriacao | date:"MM/dd/yy" }}
+</P>
+
+<P>
+  {{ dataCriacao | date | uppercase}}
+</P>
+
+<P>
+  {{ dataCriacao | date:'fullDate' | lowercase}}
+</P>
+
+<a href="youtube"> Alini Jogando de Orisa</a>
+<a href="{{youtube}}">Alini Jogando de Orisa</a>
