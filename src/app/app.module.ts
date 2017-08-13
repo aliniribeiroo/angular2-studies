@@ -9,6 +9,7 @@ import {BrowserModule} from "@angular/platform-browser";
 import {WelcomeModule} from "./welcome/welcome.module";
 import {RouteroutletExampleModule} from "./routeroutlet-example/routeroutlet-example.module";
 import {RoutesChildrenModule} from "./routes-children/routes-children.module";
+import { SignupFormComponent } from './signup-form/signup-form.component';
 
 @NgModule({
   declarations: [

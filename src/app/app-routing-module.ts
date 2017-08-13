@@ -18,6 +18,10 @@ import {Routes, RouterModule} from '@angular/router';
     {
       path: 'change-detection',
       loadChildren: './change-detection/change-detection.module#ChangeDetectionModule'
+    },
+    {
+      path: 'signup-form',
+      loadChildren: './signup-form/signup-form.module#SignupFormModule'
     }
 
   ])],
